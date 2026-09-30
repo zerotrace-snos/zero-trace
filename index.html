@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Zero-Trace</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,7 +65,7 @@
     font-weight: 700;
   }
 
-  /* ===== ФОНОВЫЕ ПРИЗРАКИ — БЕЗ КВАДРАТОВ ===== */
+  /* ===== ФОНОВЫЕ ПРИЗРАКИ — ЧИСТЫЙ SVG БЕЗ КВАДРАТОВ ===== */
   .ghost {
     position: absolute;
     width: 46px;
@@ -71,16 +74,11 @@
     animation: float 6s ease-in-out infinite;
     user-select: none;
     pointer-events: none;
-    background: transparent;
-    border: none;
-    box-shadow: none;
   }
   .ghost svg {
     width: 100%;
     height: 100%;
     display: block;
-    background: transparent;
-    border: none;
     filter: drop-shadow(0 0 10px #2b6cff) drop-shadow(0 0 22px #2b6cff);
   }
   .ghost svg path { fill: #2b6cff; }
@@ -221,7 +219,7 @@
 </head>
 <body>
 
-  <!-- Фоновые призраки (синие SVG без квадратов) -->
+  <!-- Призраки -->
   <div class="ghost">
     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
       <path d="M32 4C19 4 10 14 10 27v25c0 1.6 2 2.5 3.2 1.4l4.6-4.2c.7-.6 1.7-.6 2.4 0l5.6 5.1c.7.6 1.7.6 2.4 0l5.6-5.1c.7-.6 1.7-.6 2.4 0l5.6 5.1c.7.6 1.7.6 2.4 0l4.6-4.2C50 50.5 52 49.6 52 48V27C52 14 45 4 32 4z"/>
@@ -279,7 +277,7 @@
     </svg>
   </div>
 
-  <!-- ПОДСКАЗКА СВЕРХУ -->
+  <!-- Подсказка -->
   <div class="hint">
     <div class="hint-title">⚠️ Не открывается?</div>
     <div class="hint-text">
@@ -293,7 +291,6 @@
     <div class="subtitle">Выбери нужный раздел ниже</div>
     <div class="badge">💎 10000+ активных пользователей</div>
 
-    <!-- Кнопка -->
     <a class="btn"
        href="https://t.me/ZeroTraccebot?start=ref_eI9i2LrNLoD-_jvVmM6akJA"
        target="_blank"
